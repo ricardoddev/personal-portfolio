@@ -1,0 +1,52 @@
+:root {
+  --main-complementary-color: #C75D43;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #10131A;
+}
+
+#github-info {
+  display: flex;
+  align-items: center;
+  color: #8b8b8a;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 10vw;
+}
+
+#github-info img {
+  height: 64px;
+  border-radius: 50%;
+  
+  margin: 3px 0.9375rem 3px auto;
+}
+
+nav div ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10vw;
+
+  width: 400px;
+  height: 70px;
+}
+
+nav div ul li{
+  list-style: none;
+}
+
+nav div ul li a {
+  color: #8b8b8a;
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: .5s;
+}
+
+nav div ul li a:hover {
+  color: var(--main-complementary-color);
+}

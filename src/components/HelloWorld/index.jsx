@@ -7,6 +7,7 @@ export default function HelloWorld() {
       <div id="hw-info">
         <h2>Ricardo Delgado</h2>
         <div>
+
           <p>Web Developer from</p>
           <p id="location">Fortaleza, CE - Brazil.</p>
         </div>

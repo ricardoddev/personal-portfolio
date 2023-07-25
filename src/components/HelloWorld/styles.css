@@ -9,7 +9,6 @@ h1 {
   width: 650px;
   white-space: nowrap;
   overflow: hidden;
-  margin: 368px auto auto 10vw;
 
   animation: typing 3.5s steps(22), blinking 0.5s infinite step-end alternate;
 }
@@ -36,7 +35,6 @@ h1 {
 }
 
 #hw-info {
-  margin-right:  10vw;
   color: #8b8b8a;
   font-size: 32px;
 }

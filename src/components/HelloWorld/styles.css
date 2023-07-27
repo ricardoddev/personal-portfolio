@@ -1,14 +1,11 @@
-:root {
-  --screen-height: calc(100vh - 70px);
-}
-
-h1 {
+#hw-animation {
   font-family: 'Victor Mono', monospace;
   font-size: 48px;
   border-right: 5px solid;
   width: 650px;
   white-space: nowrap;
   overflow: hidden;
+  margin-left: 10vw;
 
   animation: typing 3.5s steps(22), blinking 0.5s infinite step-end alternate;
 }
@@ -16,8 +13,8 @@ h1 {
 .hw-home {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: var(--screen-height);
+  justify-content: space-between;
+  height: 100vh;
 
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
   -webkit-animation: bg-scrolling-reverse 1.5s infinite;
@@ -37,6 +34,7 @@ h1 {
 #hw-info {
   color: #8b8b8a;
   font-size: 32px;
+  margin-right: 10vw;
 }
 
 #hw-info h2 {

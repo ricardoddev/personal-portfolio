@@ -1,0 +1,98 @@
+#about-me-info {
+  width: 40vw;
+  color: #fff;
+
+  border-right: 1px solid white;
+  height: 80vh;
+  overflow: hidden;
+
+  position: relative;
+}
+
+#about-me-title {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--main-complementary-color);
+  
+  margin: auto;
+
+}
+
+#about-me-title span {
+  position: relative;
+}
+
+#about-me-title span svg{
+  position: absolute;
+  left: 11%;
+  bottom: -43%;
+}
+
+#about-me-card {
+  border: 2px solid #fff;
+  margin-right: 20px;
+  border-radius: 12px;
+  padding-bottom: 24px;
+
+  position: relative;
+
+  background-color: #fff;
+  color: #000;
+  font-weight:700;
+
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+#about-me-card.flip {
+  transform: rotateY(90deg); 
+}
+
+#about-me-card p {
+  padding: 20px;
+}
+
+.flags {
+  width: 72px;
+  
+  position: absolute;
+  left: 43%;
+  bottom: -18%;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.half-half {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 10vw;
+
+  background-color: #2E282A;
+  overflow: hidden;
+}
+
+.imgs-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  position: absolute;
+  left: 4.3vw;
+  top: 45vh;
+}
+
+.imgs-carousel img {
+  height: 100px;
+  width: 175px;
+}

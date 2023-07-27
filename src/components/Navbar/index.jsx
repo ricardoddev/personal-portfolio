@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link as ScrollLink } from "react-scroll"
 import axios from 'axios'
 import './styles.css'
 
@@ -26,21 +27,22 @@ export default function Navbar() {
     <>
       <nav>
         <div>
-          <a id="github-info" href="#">
+          <ScrollLink id="github-info" to="home" smooth={true}>
             {avatarUrl && <img src={avatarUrl} alt="Avatar do Github"/>}
             {username && <p>{username}</p>}
-          </a>
+          </ScrollLink>
         </div>
           
         <div>
           <ul>
-            <li><a href="">about me</a></li>
+            <li>
+              <ScrollLink to="aboutme" smooth={true}>
+                about me
+              </ScrollLink></li>
             <li><a href="">techs</a></li>
             <li><a href="">projects</a></li>
           </ul>
-        </div>
-
-        
+        </div>  
       </nav>
     </>
   )

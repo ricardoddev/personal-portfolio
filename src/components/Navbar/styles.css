@@ -44,6 +44,7 @@ nav div ul li{
 nav div ul li a {
   color: #8b8b8a;
   text-decoration: none;
+  cursor: pointer;
   font-weight: 700;
 
   transition: .5s;

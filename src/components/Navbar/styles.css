@@ -1,12 +1,12 @@
 :root {
   --main-complementary-color: #C75D43;
+  --hw-screen-height: calc(100vh - 70px);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  width: 100vw;
+  width: 100%;
   
   background-color: #10131A;
 }

@@ -11,13 +11,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-  margin: 0 10vw 10vh 10vw;
+  margin: 0 5vw 10vh 5vw;
 }
 
 .techs-background {
   background-color: rgba(160, 160, 160, 0.8);
-  margin: 20vh 15vw;
-
+  margin: 17vh 24vw;
+  
   color: #fff;
 
   border-radius: 12px;

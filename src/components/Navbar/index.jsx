@@ -40,11 +40,16 @@ export default function Navbar() {
                 about me
               </ScrollLink>
             </li>
-            <li><ScrollLink to="techs" smooth={true}>
+            <li>
+              <ScrollLink to="techs" smooth={true}>
                 techs
               </ScrollLink>
             </li>
-            <li><a href="">projects</a></li>
+            <li>
+              <ScrollLink to="projects" smooth={true}>
+                projects
+              </ScrollLink>
+            </li>
           </ul>
         </div>  
       </nav>

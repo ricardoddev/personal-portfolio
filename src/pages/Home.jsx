@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import HelloWorld from "../components/HelloWorld"
 import AboutMe from "../components/AboutMe"
 import Techs from "../components/Techs";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div id="home"><HelloWorld /></div>
       <div id="aboutme"><AboutMe /></div>
       <div id="techs"><Techs /></div>
+      <div id="projects"><Projects /></div>
     </Router>
   )
 }

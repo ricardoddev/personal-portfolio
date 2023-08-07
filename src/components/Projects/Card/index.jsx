@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
 import './styles.css'
 
-export default function Card() {
+export default function Card(props) {
+  
   return (
     <div className="card">
       <a href="">
-        <img src="../assets/print.png" alt="" />
-        <h2>Nome do projeto</h2>
+        <img src={props.url_img} alt="" />
+        <h2>{props.nome}</h2>
       </a>
 
       <div className='delete-edit-buttons'>

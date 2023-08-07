@@ -18,15 +18,42 @@
 #carousel {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 20px;
 
-  width: 50vw;  
+  width: 75vw;  
 
   padding: 40px;
-  background: rgba(160, 160, 160);
+  background: #F4F3EE;
 
-  overflow: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
 
   border-radius: 10px;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 10px; 
+}
+
+#carousel::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+#carousel::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #999;
+}
+
+#add-project {
+  background-color:#38A2BC;
+
+  font-size: 48px;
+  font-weight: bold;
+
+  border-radius: 10px;
+
+  height: 80px;
+  width: 80px;
 }

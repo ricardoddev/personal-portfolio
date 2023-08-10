@@ -8,9 +8,9 @@ export default function Projects() {
   const [projects, setProjects] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3000/projetos')
-        .then((response) => setProjects(response.data))
-        .catch((error) => console.error(error))
+        axios.get('http://localhost:3001/projetos')
+          .then((response) => setProjects(response.data))
+          .catch((error) => console.error(error))
     }, [])
 
     const result = projects.map((project) => {
@@ -19,6 +19,7 @@ export default function Projects() {
               key={project.id}
               nome={project.nome}
               url_img={project.url_img}
+              id={project.id}
             />
         )
     })
@@ -30,11 +31,7 @@ export default function Projects() {
       <div id='carousel'>
         {result}
       </div>
-
-      
-
       <button id="add-project">+</button>
-      
     </div>
   )
 }

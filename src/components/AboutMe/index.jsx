@@ -24,14 +24,17 @@ export default function AboutMe() {
         <div id="about-me-card">
           {isEnglish ? (
             <div>
-              <p>English text Lorem ipsum...</p>
-              <p>English text Lorem ipsum...</p>
+              <p>Hello! My name is <span style={{color: '#C75D43'}}>Ricardo</span>, and welcome to my personal portfolio page. Here you can find some information about the technologies I work with and some of the projects I have developed throughout my journey.</p>
+
+              <p>Speaking a bit about my personal side, I am a very curious person with an interest in learning various things from diverse areas. <span style={{color: '#C75D43'}}>Online gaming, music, and reading</span> are some of my favorite hobbies.</p>
+
+              <p>If you&apos;d like to talk to me about any of these subjects or professional topics, you can find links to my social media profiles at the bottom of the page. Feel free to contact me there!</p>
             </div>
           ) : (
             <div>
-              <p>Texto em português Lorem ipsum...</p>
-              <p>Texto em português Lorem ipsum...</p>
-              <p>Texto em português Lorem ipsum...</p>
+              <p>Olá! Me chamo <span style={{color: '#C75D43'}}>Ricardo</span> e seja bem-vindo a minha página de Portfolio pessoal. Aqui você pode encontrar um pouco sobre as tecnologias que trabalho e alguns de meus projetos que desenvolvi ao longo de minha caminhada.</p>
+              <p>Contando um pouco sobre meu lado pessoal, sou uma pessoa muito curiosa e tenho interesse em aprender várias coisas de áreas diversas. <span style={{color: '#C75D43'}}>Jogos online, música e leitura</span> são alguns de meus hobbies favoritos.</p>
+              <p>Caso queira falar comigo sobre algum desses assuntos ou sobre temáticas profissionais, no fim da página estão destacadas algumas redes sociais minhas. Seja bem-vindo para me contatar por lá!</p>
             </div>
           )}
           <button onClick={toggleLanguage}>

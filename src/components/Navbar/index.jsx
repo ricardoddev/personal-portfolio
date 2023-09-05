@@ -26,11 +26,9 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        <div>
-          <ScrollLink id="github-info" to="home" smooth={true}>
+        <div id="github-info">
             {avatarUrl && <img src={avatarUrl} alt="Avatar do Github"/>}
             {username && <p>{username}</p>}
-          </ScrollLink>
         </div>
           
         <div>

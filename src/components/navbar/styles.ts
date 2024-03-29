@@ -32,3 +32,10 @@ export const NavbarWrapper = styled.header`
         }
     }
 `
+
+export const TitleAndReturnHome = styled.h1`
+    a {
+        color: ${props => props.theme["green-cli"]};
+        text-decoration: none;
+    }
+`

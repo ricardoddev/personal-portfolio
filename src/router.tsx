@@ -11,7 +11,7 @@ export function Router() {
                 <Route path="/" element={<Home />}>
                     <Route path="/about-me" element={<AboutMe />} />
                     <Route path="/projects" element={<Projects />} />
-                    <Route path="/skills-and-techs" element={<SkillsAndTechs />} />
+                    <Route path="/techs" element={<SkillsAndTechs />} />
                 </Route>
             </Routes>
         </BrowserRouter>

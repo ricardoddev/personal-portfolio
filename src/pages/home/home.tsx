@@ -1,15 +1,15 @@
+import { CommandLineInput } from "../../components/commandLineInput/commandLineInput";
+import { InfoExibition } from "../../components/infoExibition/infoExibition";
 import { Navbar } from "../../components/navbar/navbar";
-import { CLIInput } from "./styles";
+import { HomeWrapper } from "./styles";
 
 export function Home() {
     return(
-        <>
+        <HomeWrapper>
             <Navbar />
-            <CLIInput>
-                <strong>ricardoddev/personal-portfolio:<span>~$</span>&nbsp;</strong>
-                <input type="text" />
-            </CLIInput>
-        </>
+            <CommandLineInput />
+            <InfoExibition />
+        </HomeWrapper>
              
     )
 }

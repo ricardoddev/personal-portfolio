@@ -6,9 +6,7 @@ export function Navbar() {
         <NavbarWrapper>
             <div>
                 <h1>portfólio ricardoddev</h1>
-                <br />
-                <p>digite o comando no terminal ou clique neles para acessar as informações</p>
-                <br />
+                <p>digite o comando no terminal abaixo ou clique neles para acessar as informações</p>
                 <p>(ex.: /sobre-mim)</p>
             </div>
             

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.header`
-    background: ${props => props.theme["input-dark-gray"]};
+    margin-top: 2rem;
+    background: ${props => props.theme["bg-gray"]};
 
-    height: 30vh;
     padding: 1rem;
     
     display: flex;
@@ -11,7 +11,10 @@ export const NavbarWrapper = styled.header`
     justify-content: space-between;
 
     div {
-        width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 48%;
     }
     
     ul {

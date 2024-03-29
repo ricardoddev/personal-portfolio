@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${props => props.theme['green-cli']};
         margin: 0 auto;
         max-width: 80rem;
+        padding: 0 1rem;
     }
 
     body, input, textarea, button {

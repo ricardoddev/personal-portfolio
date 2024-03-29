@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CLIWrapper = styled.main`
+export const CLIInput = styled.main`
     display: flex;
     align-items: center;
     margin: 0.5rem 0;

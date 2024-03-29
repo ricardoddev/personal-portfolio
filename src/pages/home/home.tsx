@@ -1,10 +1,15 @@
-import { CLIWrapper } from "./styles";
+import { Navbar } from "../../components/navbar/navbar";
+import { CLIInput } from "./styles";
 
 export function Home() {
     return(
-        <CLIWrapper>
-            <strong>ricardoddev/personal-portfolio:<span>~$</span>&nbsp;</strong>
-            <input type="text" />
-        </CLIWrapper>     
+        <>
+            <Navbar />
+            <CLIInput>
+                <strong>ricardoddev/personal-portfolio:<span>~$</span>&nbsp;</strong>
+                <input type="text" />
+            </CLIInput>
+        </>
+             
     )
 }

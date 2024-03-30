@@ -26,7 +26,6 @@ export const NavbarWrapper = styled.header`
 
         li {
             a {
-                text-decoration: none;
                 color: ${props => props.theme["green-cli"]};
             }
         }

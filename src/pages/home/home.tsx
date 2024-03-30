@@ -9,7 +9,6 @@ export function Home() {
             <Navbar />
             <CommandLineInput />
             <InfoExibition />
-                
         </HomeWrapper>
              
     )

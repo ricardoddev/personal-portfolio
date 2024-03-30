@@ -6,17 +6,6 @@ export const CLIInput = styled.div`
     margin: 1rem auto;
     width: 100%;
 
-    strong {
-        flex: 0 0 auto;
-        width: auto;
-        white-space: nowrap;
-    }
-
-    span {
-        color: ${props => props.theme.white};
-        margin: 0 0.275rem 0 5px;
-    }
-
     input {
         background: ${props => props.theme["input-dark-gray"]};
         width: 100%;

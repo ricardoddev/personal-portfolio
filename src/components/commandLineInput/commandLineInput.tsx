@@ -2,8 +2,7 @@ import { useState } from "react";
 import { CLIInput } from "./styles";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-
-
+import { User } from "../user/user";
 
 export function CommandLineInput() {
     const [command, setCommand] = useState('')
@@ -45,7 +44,7 @@ export function CommandLineInput() {
 
     return (
         <CLIInput>
-            <strong>ricardoddev/personal-portfolio:<span>~$</span>&nbsp;</strong>
+            <User />
             <input 
                 type="text" 
                 onChange={handleInputChange}

@@ -5,7 +5,5 @@ export const InfoExibitionWrapper = styled.main`
     
     margin-bottom: 2rem;
     background: ${props => props.theme["bg-gray"]};
-    padding: 1rem;
-    
-    
+    padding-bottom: 1rem;    
 `

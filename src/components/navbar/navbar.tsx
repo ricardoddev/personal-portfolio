@@ -6,7 +6,7 @@ export function Navbar() {
         <NavbarWrapper>
             <div>
                 <TitleAndReturnHome><Link to={'/'}>portfólio ricardoddev</Link></TitleAndReturnHome>
-                <p>digite o comando na CLI abaixo e aperte ENTER ou clique neles para acessar as informações</p>
+                <p>digite o comando na CLI abaixo e aperte ENTER ou clique nos botões para acessar as informações</p>
                 <p>(ex.: /sobre-mim)</p>
             </div>
             

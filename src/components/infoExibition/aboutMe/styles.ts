@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const AboutMeWrapper = styled.div`
     display: flex;
@@ -26,7 +26,7 @@ export const AboutMeParagraph = styled.p`
             margin: .5rem 0;
 
             a {
-                color: ${props => props.theme["green-cli"]};
+                color: ${props => props.theme['green-cli']};
             }
         }
     }

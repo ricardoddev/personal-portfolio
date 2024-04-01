@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ProjectWrapper = styled.div`
     display: flex;
@@ -9,7 +9,7 @@ export const ProjectWrapper = styled.div`
     }
 
     a {
-        color: ${props => props.theme["green-cli"]};
+        color: ${props => props.theme['green-cli']};
     }
 `
 
@@ -21,4 +21,8 @@ export const HelpReply = styled.p`
     display: flex;
     flex-direction: column;
     gap: .5rem;
+
+    p a {
+        color: ${props => props.theme['green-cli']};
+    }
 `

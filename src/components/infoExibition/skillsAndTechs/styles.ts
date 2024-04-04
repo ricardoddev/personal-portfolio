@@ -1,18 +1,21 @@
 import styled from 'styled-components'
 
-export const ProjectWrapper = styled.div`
+export const SkillsAndTechsWrapper = styled.div`
     display: flex;
+    margin-top: 2rem;
+`
 
-    p {
-        color: ${props => props.theme.white};
-    }
+export const TechsCategories = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 
     a {
         color: ${props => props.theme['green-cli']};
     }
 `
 
-export const HelpReply = styled.p`
+export const TechInstructions = styled.div`
     color: ${props => props.theme.white};
 
     margin: .5rem 0 2rem 1rem;
@@ -20,8 +23,4 @@ export const HelpReply = styled.p`
     display: flex;
     flex-direction: column;
     gap: .5rem;
-
-    p a {
-        color: ${props => props.theme['green-cli']};
-    }
 `

@@ -1,3 +1,4 @@
+import { HelpCommand } from '../../helpCommand/helpCommand'
 import { User } from '../../user/user'
 import { InfoExibitionWrapper } from '../styles'
 import { HelpReply, ProjectWrapper } from './styles'
@@ -38,10 +39,7 @@ const projects = [
 export function Projects() {
 	return (
 		<InfoExibitionWrapper>
-			<ProjectWrapper>
-				<User route="/projects" />
-				<p>help</p>
-			</ProjectWrapper>
+			<HelpCommand route='/projects' />
 
 			<HelpReply>
 				<p>Clique no nome do projeto para acessar seu repositório no <a href="https://github.com/ricardoddev/" target='_blank' rel="noreferrer">Github</a>.</p>

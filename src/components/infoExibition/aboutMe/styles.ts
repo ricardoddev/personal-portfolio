@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const AboutMeWrapper = styled.div`
     display: flex;
-    margin-top: .5rem;
 
     p {
         color: ${props => props.theme.white};

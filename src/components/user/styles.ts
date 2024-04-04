@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const CLIUser = styled.div`
     strong {
@@ -8,7 +8,7 @@ export const CLIUser = styled.div`
     }
 
     span {
-        color: ${props => props.theme["blue-cli"]};
+        color: ${props => props.theme['blue-cli']};
     }
 
     #last-char {

@@ -1,11 +1,26 @@
-import { HelpCommandWrapper } from '../../../helpCommand/styles'
+import { User } from '../../../user/user'
 import { ProgrammingLanguagesWrapper } from './styles'
+
+const programmingLanguages = [
+	'javascript',
+	'typescript',
+	'java',
+	'ruby',
+]
 
 export function ProgrammingLanguages() {
 	return(
 		<ProgrammingLanguagesWrapper>
-			<HelpCommandWrapper />
-			
+			{
+				programmingLanguages.map(language => {
+					return (
+						<div key={language}>
+							<User route='/techs/programming-languages' />
+							<p>{language}</p>
+						</div>
+					)
+				})
+			}
 		</ProgrammingLanguagesWrapper>
 	)
 }

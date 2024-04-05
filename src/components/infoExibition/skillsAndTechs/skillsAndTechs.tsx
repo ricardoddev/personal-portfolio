@@ -19,9 +19,9 @@ export function SkillsAndTechs() {
 					<User route='/techs' />
 					<TechsCategories>
 						<strong><Link to={'/techs/programming-languages'}>programming languages</Link></strong>
-						<strong><Link to={'/techs/'}>front-end</Link></strong>
-						<strong><Link to={'/techs/'}>back-end</Link></strong>
-						<strong><Link to={'/techs/'}>other</Link></strong>
+						<strong><Link to={'/techs/front-end'}>front-end</Link></strong>
+						<strong><Link to={'/techs/back-end'}>back-end</Link></strong>
+						<strong><Link to={'/techs/other'}>other</Link></strong>
 					</TechsCategories>
 				</SkillsAndTechsWrapper>
 				<Outlet />

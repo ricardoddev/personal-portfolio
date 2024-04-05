@@ -1,17 +1,29 @@
 import styled from 'styled-components'
 
-export const AboutMeWrapper = styled.div`
+export const AboutMeHeader = styled.div`
     display: flex;
+    justify-content: space-between;
+    div {
+        display: flex;
 
-    p {
-        color: ${props => props.theme.white};
+        p {
+            color: ${props => props.theme.white};
+        }
+    }
+
+    .select-language {
+        margin-right: 1rem;
+
+        a {
+            color: ${props => props.theme['green-cli']};
+        }
     }
 `
 
 export const AboutMeParagraph = styled.p`
     color: ${props => props.theme.white};
 
-    margin: .5rem 1rem 1rem 1rem;
+    margin: .5rem 1rem 0 1rem;
 
     display: flex;
     flex-direction: column;

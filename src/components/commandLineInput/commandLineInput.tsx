@@ -1,56 +1,56 @@
-import { useState } from "react";
-import { CLIInput } from "./styles";
-import { useNavigate } from "react-router-dom";
-import { toast } from "sonner";
-import { User } from "../user/user";
+import { useState } from 'react'
+import { CLIInput } from './styles'
+import { useNavigate } from 'react-router-dom'
+import { toast } from 'sonner'
+import { User } from '../user/user'
 
 export function CommandLineInput() {
-    const [command, setCommand] = useState('')
-    const navigate = useNavigate()
+	const [command, setCommand] = useState('')
+	const navigate = useNavigate()
 
-    function translateCommand(command: string) {
-        if (command === '/sobre-mim') {
-            return '/about-me'
-        }
+	function translateCommand(command: string) {
+		if (command === '/about-me') {
+			return '/about-me'
+		}
 
-        if (command === '/projetos') {
-            return '/projects'
-        }
+		if (command === '/projects') {
+			return '/projects'
+		}
 
-        return command
-    }
+		return command
+	}
     
-    function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
-        setCommand(event.target.value)
-    }
+	function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
+		setCommand(event.target.value)
+	}
 
-    const handleInputSubmit = (event: React.KeyboardEvent<HTMLInputElement>) => {
-        if (event.key === 'Enter') {
-            if (command === '/sobre-mim' || command === '/projetos' || command === '/techs') {
-                const translatedCommand = translateCommand(command)
-                navigate(translatedCommand)         
-            } else {
-                toast.error('Comando inválido. Apenas os comandos "/sobre-mim", "/projetos" e "/techs" são permitidos', {
-                    style: {
-                        height: '5rem',
-                    }, 
-                    duration: 6000,
-                })
-            }
+	const handleInputSubmit = (event: React.KeyboardEvent<HTMLInputElement>) => {
+		if (event.key === 'Enter') {
+			if (command === '/about-me' || command === '/projects' || command === '/techs') {
+				const translatedCommand = translateCommand(command)
+				navigate(translatedCommand)         
+			} else {
+				toast.error('Comando inválido. Apenas os comandos "/about-me", "/projects" e "/techs" são permitidos', {
+					style: {
+						height: '5rem',
+					}, 
+					duration: 6000,
+				})
+			}
             
-            setCommand('');
-        }
-      };
+			setCommand('')
+		}
+	}
 
-    return (
-        <CLIInput>
-            <User />
-            <input 
-                type="text" 
-                onChange={handleInputChange}
-                onKeyDown={handleInputSubmit}
-                value={command}
-            />
-        </CLIInput>
-    )
+	return (
+		<CLIInput>
+			<User />
+			<input 
+				type="text" 
+				onChange={handleInputChange}
+				onKeyDown={handleInputSubmit}
+				value={command}
+			/>
+		</CLIInput>
+	)
 }

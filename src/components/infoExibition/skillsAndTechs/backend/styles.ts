@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ProgrammingLanguagesWrapper = styled.main`
+export const BackendWrapper = styled.main`
     padding-top: 1rem;
 
     display: flex;

@@ -44,13 +44,13 @@ export function AboutMe() {
 		<InfoExibitionWrapper>
 			<AboutMeHeader>
 				<div>
-					<User route="/sobre-mim"/>
+					<User route="about-me"/>
 					<p>about-me</p>
 				</div>
 				<span className='select-language'>
-					<a href="" onClick={switchToPortuguese}>português</a>
+					<a href="" className={isPortuguese ? 'is-active' : ''} onClick={switchToPortuguese}>português</a>
 					<span>/</span>
-					<a href="" onClick={switchToEnglish}>english</a>
+					<a href="" className={isPortuguese ? '' : 'is-active'} onClick={switchToEnglish}>english</a>
 				</span>
 			</AboutMeHeader>
 

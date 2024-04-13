@@ -5,18 +5,19 @@ import { SkillsAndTechsWrapper, TechInstructions, TechsCategories } from './styl
 import { HelpCommand } from '../../helpCommand/helpCommand'
 
 export function SkillsAndTechs() {
+
 	return (
 		<>
 			<InfoExibitionWrapper>
 				
-				<HelpCommand route='/techs'/>
+				<HelpCommand route='techs'/>
 				<TechInstructions>
 					<p>Clique nos links abaixo para visualizar as informações</p>
 					<p>Click on the links below to see the informations</p>
 				</TechInstructions>
 
 				<SkillsAndTechsWrapper>
-					<User route='/techs' />
+					<User route='techs' />
 					<TechsCategories>
 						<strong><Link to={'/techs/programming-languages'}>programming languages</Link></strong>
 						<strong><Link to={'/techs/front-end'}>front-end</Link></strong>

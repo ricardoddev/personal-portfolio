@@ -15,7 +15,7 @@ export function ProgrammingLanguages() {
 				programmingLanguages.map(language => {
 					return (
 						<div key={language}>
-							<User route='/techs/programming-languages' />
+							<User route='techs/prog-lang' />
 							<p>{language}</p>
 						</div>
 					)

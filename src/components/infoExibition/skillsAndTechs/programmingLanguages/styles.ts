@@ -13,4 +13,11 @@ export const ProgrammingLanguagesWrapper = styled.main`
             color: ${props => props.theme.white};
         }
     }
+
+    @media screen and (max-width: 768px){
+        gap: 1rem;
+        div {
+            flex-direction: column;
+        }
+    }
 `

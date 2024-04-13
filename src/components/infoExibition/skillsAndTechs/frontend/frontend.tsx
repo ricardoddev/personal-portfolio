@@ -17,7 +17,7 @@ export function Frontend() {
 			{frontendTechs.map(frontendTech => {
 				return (
 					<div key={frontendTech}>
-						<User route='/techs/front-end' />
+						<User route='techs/front-end' />
 						<p>{frontendTech}</p>
 					</div>
 				)

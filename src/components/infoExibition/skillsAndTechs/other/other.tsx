@@ -18,7 +18,7 @@ export function Other() {
 			{otherTechs.map(tech => {
 				return (
 					<div key={tech}>
-						<User route='/techs/other' />
+						<User route='techs/other' />
 						<p>{tech}</p>
 					</div>
 

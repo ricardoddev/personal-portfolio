@@ -39,7 +39,7 @@ const projects = [
 export function Projects() {
 	return (
 		<InfoExibitionWrapper>
-			<HelpCommand route='/projects' />
+			<HelpCommand route='projects' />
 
 			<HelpReply>
 				<p>Clique no nome do projeto para acessar seu repositório no <a href="https://github.com/ricardoddev/" target='_blank' rel="noreferrer">Github</a>.</p>
@@ -49,7 +49,7 @@ export function Projects() {
 			{projects.map(project => {
 				return (
 					<ProjectWrapper key={project.id}>
-						<User route="/projects"/>
+						<User route="projects"/>
 						<a href={project.link} target="_blank" rel="noreferrer">{project.name}</a>
 					</ProjectWrapper>
 				)

@@ -20,4 +20,10 @@ export const CLIInput = styled.div`
             background-color: ${props => props.theme.black}; /* Cor da seleção */
         }
     }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: self-start;
+        gap: 0.5rem;
+    }
 `

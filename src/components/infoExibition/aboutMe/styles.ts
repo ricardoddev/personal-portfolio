@@ -15,12 +15,30 @@ export const AboutMeHeader = styled.div`
         margin-right: 1rem;
 
         a {
-            color: ${props => props.theme['green-cli']};
+            color: ${props => props.theme['blue-cli']};
+        }
+    }
+
+    .is-active {
+        color: ${props => props.theme['green-cli']} !important;
+    }
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        div {
+            flex-direction: column;
+            gap: .5rem;
+        }
+        
+        .select-language a {
+            font-size: 1.3rem;
         }
     }
 `
 
-export const AboutMeParagraph = styled.p`
+export const AboutMeParagraph = styled.div`
     color: ${props => props.theme.white};
 
     margin: .5rem 1rem 0 1rem;
@@ -41,4 +59,5 @@ export const AboutMeParagraph = styled.p`
             }
         }
     }
+    
 `

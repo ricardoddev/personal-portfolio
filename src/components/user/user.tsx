@@ -9,7 +9,8 @@ export function User({ route }:UserProps) {
 		<CLIUser>
 			<strong>
                 ricardoddev:
-				<span>~/personal-portfolio</span>
+				<span>~/</span>
+				<span className='off-in-mobile'>personal-portfolio</span>
 				<span>{route}</span>
 				<span id='last-char'>$</span>&nbsp;
 			</strong>

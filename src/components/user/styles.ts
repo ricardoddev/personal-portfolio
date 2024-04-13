@@ -15,4 +15,15 @@ export const CLIUser = styled.div`
         color: ${props => props.theme.white};
         margin-left: 2px;
     }
+
+    @media screen and (max-width: 768px) {
+        align-items: self-start;
+        strong {
+            overflow-wrap: anywhere;        
+        }
+
+        .off-in-mobile {
+            display: none;
+        }
+    }
 `

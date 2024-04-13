@@ -18,7 +18,7 @@ export function Backend() {
 			{backendTechs.map(backendTech => {
 				return (
 					<div key={backendTech}>
-						<User route='/techs/back-end' />
+						<User route='techs/back-end' />
 						<p>{backendTech}</p>
 					</div>
 				)

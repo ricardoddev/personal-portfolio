@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { NavbarWrapper, TitleAndReturnHome } from './styles'
 
 export function Navbar() {
+	
 	return (
 		<NavbarWrapper>
 			<div>

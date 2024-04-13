@@ -7,7 +7,7 @@ export function Navbar() {
 			<div>
 				<TitleAndReturnHome><Link to={'/'}>portfólio ricardoddev</Link></TitleAndReturnHome>
 				<p>digite o comando na CLI abaixo e aperte ENTER ou clique nos botões para acessar as informações</p>
-				<p>(ex.: /about-me)</p>
+				<p>(ex.: about-me)</p>
 			</div>
             
 			<ul>

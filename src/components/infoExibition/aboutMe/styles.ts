@@ -59,5 +59,11 @@ export const AboutMeParagraph = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 768px){
+        ul {
+            margin-left: 0rem;
+        }
+    }
     
 `

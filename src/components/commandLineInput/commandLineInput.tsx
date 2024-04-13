@@ -8,17 +8,7 @@ export function CommandLineInput() {
 	const [command, setCommand] = useState('')
 	const navigate = useNavigate()
 
-	function translateCommand(command: string) {
-		if (command === '/about-me') {
-			return '/about-me'
-		}
-
-		if (command === '/projects') {
-			return '/projects'
-		}
-
-		return command
-	}
+	
     
 	function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
 		setCommand(event.target.value)
@@ -26,9 +16,8 @@ export function CommandLineInput() {
 
 	const handleInputSubmit = (event: React.KeyboardEvent<HTMLInputElement>) => {
 		if (event.key === 'Enter') {
-			if (command === '/about-me' || command === '/projects' || command === '/techs') {
-				const translatedCommand = translateCommand(command)
-				navigate(translatedCommand)         
+			if (command === 'about-me' || command === 'projects' || command === 'techs') {
+				navigate(command)         
 			} else {
 				toast.error('Comando inválido. Apenas os comandos "/about-me", "/projects" e "/techs" são permitidos', {
 					style: {
@@ -50,6 +39,7 @@ export function CommandLineInput() {
 				onChange={handleInputChange}
 				onKeyDown={handleInputSubmit}
 				value={command}
+				placeholder='digite aqui'
 			/>
 		</CLIInput>
 	)

@@ -8,7 +8,7 @@ export function InfoExibition() {
 	const isHomePage = location.pathname === '/'
 
 	return (
-		<InfoExibitionWrapper>
+		<InfoExibitionWrapper id="infoExibition">
 			{isHomePage ? (
 				<IsHomeContent>
 					<img src={Ricardo} alt="" />

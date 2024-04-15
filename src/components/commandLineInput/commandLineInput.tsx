@@ -37,7 +37,7 @@ export function CommandLineInput() {
 				onChange={handleInputChange}
 				onKeyDown={handleInputSubmit}
 				value={command}
-				placeholder='about-me'
+				placeholder='about-me, projects, techs'
 			/>
 		</CLIInput>
 	)

@@ -2,7 +2,13 @@ import { Link } from 'react-router-dom'
 import { NavbarWrapper, TitleAndReturnHome } from './styles'
 
 export function Navbar() {
-	
+	const handleScrollToInfoExibition = () => {
+		const infoExibitionElement = document.getElementById('infoExibition')
+		if (infoExibitionElement) {
+			infoExibitionElement.scrollIntoView({ behavior: 'smooth' })
+		}
+	}
+
 	return (
 		<NavbarWrapper>
 			<div>
@@ -12,9 +18,9 @@ export function Navbar() {
 			</div>
             
 			<ul>
-				<li><Link to={'/about-me'}>/about-me</Link></li>
-				<li><Link to={'/projects'}>/projects</Link></li>
-				<li><Link to={'/techs'}>/techs</Link></li>
+				<li><Link to={'/about-me'} onClick={handleScrollToInfoExibition}>/about-me</Link></li>
+				<li><Link to={'/projects'} onClick={handleScrollToInfoExibition}>/projects</Link></li>
+				<li><Link to={'/techs'} onClick={handleScrollToInfoExibition}>/techs</Link></li>
 			</ul>
 		</NavbarWrapper>
 	)
